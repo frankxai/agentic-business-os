@@ -23,18 +23,15 @@ Specs first, code second. For any net-new surface (route, feature, integration),
 
 Write specs to `docs/intelligence/specs/{date}-{slug}.md`.
 
-## Standing priorities (check docs/intelligence/MEMORY.md for current state)
+## Standing priorities
 
-1. Launch-notify list → email provider wiring (`app/api/notify/route.ts` is a stub)
-2. Research library entries on /science
-3. Checkout (Shopify Buy Button vs. Stripe Payment Links — decision record needed before building)
-4. Localized content (NL/DE) — only after English content proves demand
+Read `docs/intelligence/MEMORY.md` first — the "Open:" lines there ARE the priority queue. Don't invent a roadmap the memory doesn't support.
 
 ## Anti-patterns
 
 - Building before specing
-- Product-line sprawl — {{BRAND}} is ONE towel until a decision record says otherwise
+- Scope sprawl — the scope stays what decision record 0001 says until a new record supersedes it
 - Copying competitor features without naming the problem ours solves
 
 ---
-harness: agentic-business-os@v0.1.0
+harness: agentic-business-os@v0.1.1

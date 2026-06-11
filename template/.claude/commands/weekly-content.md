@@ -11,4 +11,4 @@
 5. Keep it executable by one person with a day job. Three items maximum. A plan that doesn't fit the founders' real week is theatre.
 
 ---
-harness: agentic-business-os@v0.1.0
+harness: agentic-business-os@v0.1.1

@@ -14,21 +14,21 @@ Turns one published piece into 4 platform-native draft variants. **Writes drafts
 
 | Platform | Shape | Notes |
 |---|---|---|
-| Instagram | Hook line + 3–5 short lines + CTA. ≤150 words. | The visual carries it; caption supports. No hashtag walls — 3 max. |
-| LinkedIn | Story-first, 120–200 words, line breaks between thoughts. | The founder-journey angle lands here: building a product in the open. |
+| Instagram | Hook line + 3–5 short lines + CTA. ≤150 words. | The visual carries it; caption supports. 3 hashtags max. |
+| LinkedIn | Story-first, 120–200 words, line breaks between thoughts. | The founder-journey angle lands here: building in the open. |
 | X | 1–2 posts, ≤280 chars each. Lead with the number or the dry line. | |
 | TikTok caption | One hook sentence + 2 hashtags. | Script ideas go in a comment block, not the caption. |
 
 ## Rules
 
-1. **Claims rules apply at FULL strength** — social copy is where health-claim violations happen first. Run every variant through the Gate 1 patterns from `lib/voice/brand-voice.ts` before writing the draft file.
+1. **Claims rules apply at FULL strength** — social copy is where regulated-claim violations happen first. Run every variant through Gate 1 patterns from the voice file in `lib/voice/` before writing the draft file.
 2. Each variant links to the source page (bio-link note for IG/TikTok).
-3. The dry-humor budget is one line across ALL variants, not one per platform.
-4. Metric. Celsius. International English.
+3. The humor budget from `taste.md` is spent once across ALL variants, not once per platform.
+4. Locale conventions per the voice file (`MARKETS`, `UNITS`).
 
 ## Output
 
 `content/social/drafts/{slug}-{platform}.md` per variant + a summary table of the 4 drafts.
 
 ---
-harness: agentic-business-os@v0.1.0
+harness: agentic-business-os@v0.1.1

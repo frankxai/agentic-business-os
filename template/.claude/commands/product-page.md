@@ -12,4 +12,4 @@
 6. Walk the `taste.md` polish pass; report results honestly
 
 ---
-harness: agentic-business-os@v0.1.0
+harness: agentic-business-os@v0.1.1

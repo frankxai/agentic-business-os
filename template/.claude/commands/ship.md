@@ -14,4 +14,4 @@
 A red gate stops the pipeline. Report what's red and why; don't ship around it.
 
 ---
-harness: agentic-business-os@v0.1.0
+harness: agentic-business-os@v0.1.1

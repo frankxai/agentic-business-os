@@ -13,4 +13,4 @@
 The review is 15 minutes, not an hour. The value is the compounding memory, not the ceremony.
 
 ---
-harness: agentic-business-os@v0.1.0
+harness: agentic-business-os@v0.1.1
