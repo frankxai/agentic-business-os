@@ -1,0 +1,10 @@
+{
+  "id": "business-intelligence-pack",
+  "name": "Business Intelligence",
+  "version": "0.1.0",
+  "kind": "memory",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "Starlight Intelligence System (memory architecture)",
+  "entrypoint": "SKILL.md"
+}

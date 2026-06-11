@@ -1,0 +1,33 @@
+name: harness-sync
+
+# On every release: open sync PRs on all registered downstream instances.
+# Requires a SYNC_TOKEN secret (PAT with repo scope on the downstream repos) —
+# the default GITHUB_TOKEN cannot write to other repositories.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Single downstream repo (owner/repo), empty = all"
+        required: false
+        default: ""
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run harness sync
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
+        run: |
+          if [ -n "${{ github.event.inputs.repo }}" ]; then
+            node scripts/harness-sync.mjs --repo "${{ github.event.inputs.repo }}"
+          else
+            node scripts/harness-sync.mjs --all
+          fi

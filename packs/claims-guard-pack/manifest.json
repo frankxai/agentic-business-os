@@ -1,0 +1,10 @@
+{
+  "id": "claims-guard-pack",
+  "name": "Claims Guard",
+  "version": "0.1.0",
+  "kind": "gate",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "frankx.ai @integrity-guard (5-gate pre-publish pattern)",
+  "entrypoint": "SKILL.md"
+}

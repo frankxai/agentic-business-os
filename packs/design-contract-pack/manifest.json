@@ -1,0 +1,10 @@
+{
+  "id": "design-contract-pack",
+  "name": "Design Contract",
+  "version": "0.1.0",
+  "kind": "authoring",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "frankx.ai design contract (Google Labs DESIGN.md spec shape)",
+  "entrypoint": "SKILL.md"
+}

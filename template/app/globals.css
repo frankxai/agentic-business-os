@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  body {
+    @apply bg-concrete text-chalk-muted antialiased;
+  }
+  ::selection {
+    @apply bg-heat text-concrete;
+  }
+}
+
+@layer components {
+  /* The stencil eyebrow — the brand's signature section opener */
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.3em] text-chalk-subtle;
+  }
+  /* Mono data callout — temperatures, specs, citations */
+  .data-callout {
+    @apply rounded-md bg-charcoal px-5 py-4 font-mono text-sm text-steam;
+  }
+}

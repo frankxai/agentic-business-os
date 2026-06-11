@@ -1,0 +1,10 @@
+{
+  "id": "weekly-rhythm-pack",
+  "name": "Weekly Rhythm",
+  "version": "0.1.0",
+  "kind": "workflow",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "frankx.ai 6-layer operating loop (compressed for founders)",
+  "entrypoint": "SKILL.md"
+}

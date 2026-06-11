@@ -1,0 +1,11 @@
+{
+  "comment": "Registered downstream instances. Foundry installs are added here; self-serve instances register via issue. The sync NEVER auto-merges — see HARNESS.md.",
+  "downstreams": [
+    {
+      "repo": "frankxai/damfrost",
+      "instance": "Damfrost",
+      "since": "2026-06-11",
+      "tier": "founding"
+    }
+  ]
+}
