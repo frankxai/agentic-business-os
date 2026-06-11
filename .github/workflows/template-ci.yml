@@ -1,0 +1,34 @@
+name: template-ci
+
+# Build-verify the template on every change. The template's promise is
+# "instantiate and it builds" — this workflow is that promise, enforced.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "template/**"
+      - ".github/workflows/template-ci.yml"
+  pull_request:
+    paths:
+      - "template/**"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: template
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: template/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm build

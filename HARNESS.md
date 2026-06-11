@@ -33,3 +33,13 @@ GH_TOKEN=<token> node scripts/harness-sync.mjs --repo <owner>/<repo>
 ## The principle, stated once
 
 The voice file, the doctrine, the design tokens — those ARE the business. The gate logic and command pipelines — those improve for every instance at once. The line between them is this contract, and the contract only moves by a new major version with explicit consent.
+
+## For upstream maintainers — releasing
+
+1. Land harness changes via PR (template-ci must be green; harness files must stay brand-neutral)
+2. Update `CHANGELOG.md` — the downstream PR body links the release notes, so write them for founders, not for git
+3. Tag: `gh release create vX.Y.Z --title "…" --notes "…"` — patch = fixes/additions, minor = new agents/commands, **major = any change to this contract itself**
+4. The release triggers `.github/workflows/harness-sync.yml` (requires `SYNC_TOKEN` secret — a PAT with repo scope on downstreams; without it the workflow no-ops with a notice and you run the sync locally)
+5. Releases that don't touch `template/.claude/` produce zero downstream PRs — the sync diffs content, not versions
+
+**Downstream deferral is always safe:** declining or closing a sync PR loses nothing; the next release's PR includes everything outstanding, because the sync diffs against current state, not against history.

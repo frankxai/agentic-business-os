@@ -31,6 +31,16 @@ Turns `template/` into a specific business's operating system through a guided i
 3. Walk the founder through `GUIDE.md` day-1 onboarding
 4. Commit. Deploy is the founder's button (see `docs/ops/DEPLOY.md`).
 
+## Phase 4 — post-spawn checklist (surface to the founder)
+
+- [ ] Add a `LICENSE` to the instance repo (the template's MIT covers the template; the instance picks its own)
+- [ ] GitHub repo settings: description, topics, default branch protection if a team works here
+- [ ] Vercel: import repo, add domain, env vars in project settings only (`docs/ops/DEPLOY.md`)
+- [ ] Email provider decision for `/api/notify` → decision record before wiring
+- [ ] Register for harness sync (Foundry installs: automatic; self-serve: open an issue upstream)
+- [ ] Calendar: Monday `/weekly-content` (10 min) + Friday `/weekly-review` (15 min) — the rhythm IS the system
+- [ ] When stuck: `template/docs/ops/TROUBLESHOOT.md`
+
 ## Rules
 
 - One question at a time in Phase 1. The interview IS the product experience.

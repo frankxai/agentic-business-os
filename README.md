@@ -1,5 +1,10 @@
 # Agentic Business OS
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Template](https://img.shields.io/badge/GitHub-use%20this%20template-blue)](https://github.com/frankxai/agentic-business-os/generate)
+[![template-ci](https://github.com/frankxai/agentic-business-os/actions/workflows/template-ci.yml/badge.svg)](https://github.com/frankxai/agentic-business-os/actions/workflows/template-ci.yml)
+[![Installs by application](https://img.shields.io/badge/installs-frankx.ai%2Ffoundry-10b981)](https://frankx.ai/foundry)
+
 **A complete operating system for running a business with AI agents — website, agent harness, quality gates, and compounding business memory. Installable in a day. Yours forever.**
 
 Part of the **Agentic OS family**, built on the FrankX stack:

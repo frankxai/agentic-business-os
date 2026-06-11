@@ -7,7 +7,8 @@
       "version": "0.1.0",
       "kind": "gate",
       "summary": "Zero-tolerance pre-publish gate for regulated claim language, uncited assertions, and AI-tone. The load-bearing pack.",
-      "coworkCompatible": true
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
     },
     {
       "id": "business-intelligence-pack",
@@ -15,7 +16,8 @@
       "version": "0.1.0",
       "kind": "memory",
       "summary": "File-based business memory: decision records, market notes, weekly reviews. Check first, update after.",
-      "coworkCompatible": true
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
     },
     {
       "id": "design-contract-pack",
@@ -23,7 +25,8 @@
       "version": "0.1.0",
       "kind": "authoring",
       "summary": "Author a design.md + taste.md two-file design contract for any brand: tokens + judgment.",
-      "coworkCompatible": true
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
     },
     {
       "id": "weekly-rhythm-pack",
@@ -31,7 +34,8 @@
       "version": "0.1.0",
       "kind": "workflow",
       "summary": "The founder-sized operating loop: Monday plan (10 min), midweek production, Friday review (15 min).",
-      "coworkCompatible": true
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
     }
   ]
 }

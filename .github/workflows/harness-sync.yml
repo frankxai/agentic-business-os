@@ -26,6 +26,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
         run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::notice::SYNC_TOKEN secret not configured — skipping automated sync."
+            echo "::notice::Run locally instead: GH_TOKEN=<pat> node scripts/harness-sync.mjs --all"
+            exit 0
+          fi
           if [ -n "${{ github.event.inputs.repo }}" ]; then
             node scripts/harness-sync.mjs --repo "${{ github.event.inputs.repo }}"
           else

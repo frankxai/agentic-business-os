@@ -1,0 +1,8 @@
+# Default owner — every path
+* @frankxai
+
+# The sync contract and harness files are the product's spine
+/HARNESS.md @frankxai
+/template/.claude/ @frankxai
+/scripts/harness-sync.mjs @frankxai
+/downstreams.json @frankxai
