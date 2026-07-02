@@ -18,7 +18,7 @@ LAYER 1 — THE OS FAMILY
                         ├── agentic-business-os     → THIS REPO          (live)
                         ├── agentic-family-os       → in development
                         ├── agentic-health-os       → in development
-                        └── investor OS             → live as packs/investor-os-pack here
+                        └── agentic-investor-os     → live as packs/investor-os-pack here
                                                       + the engine at Starlight-Intelligence-System/
                                                       verticals/investment-intelligence (dedicated
                                                       repo deferred until demand shows)

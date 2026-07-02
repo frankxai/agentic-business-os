@@ -31,6 +31,27 @@ docs/intelligence/invest/
 
 Check first, update after. Absolute dates only. Percentages and bands, never raw balances, in any shared memory.
 
+### Thesis template (`theses/<slug>.md`)
+
+```markdown
+# {thesis title}
+**Status:** Active / Paused / Exited · **Opened:** YYYY-MM-DD
+**Mechanism:** {how value is generated or captured — sourced, not vibes}
+**Risk profile:** {key risks, counterparty, drawdown tolerance}
+**Falsifier:** {what evidence would prove this thesis wrong}
+**Exit signal:** {specific conditions to exit}
+```
+
+### Trajectory template (`trajectories/<slug>-YYYY-WW.md`)
+
+```markdown
+# {action title}
+**Thesis:** theses/{slug}.md · **Date:** YYYY-MM-DD
+**Action:** {what was decided/executed, size band, venue class}
+**Outcome:** {realized vs expected, absolute dates}
+**Lesson:** {what to update — a lens calibration, a cap, the thesis itself}
+```
+
 ## Refusal list (what this pack must never do)
 
 - Place, simulate, or draft live-trade instructions for any venue. No execution surface exists here, by design.
