@@ -36,6 +36,15 @@
       "summary": "The founder-sized operating loop: Monday plan (10 min), midweek production, Friday review (15 min).",
       "coworkCompatible": true,
       "harnessVersion": "v0.1.2"
+    },
+    {
+      "id": "investor-os-pack",
+      "name": "Investor OS",
+      "version": "0.1.0",
+      "kind": "vertical",
+      "summary": "Disciplined investing practice: blind-parallel analysis, bull/bear debate, risk gate, human-decided actions, outcome-grounded learning. Non-advisory, no execution, no credentials — by design.",
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
     }
   ]
 }

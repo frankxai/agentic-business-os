@@ -18,7 +18,10 @@ LAYER 1 — THE OS FAMILY
                         ├── agentic-business-os     → THIS REPO          (live)
                         ├── agentic-family-os       → in development
                         ├── agentic-health-os       → in development
-                        └── agentic-investor-os     → in development
+                        └── investor OS             → live as packs/investor-os-pack here
+                                                      + the engine at Starlight-Intelligence-System/
+                                                      verticals/investment-intelligence (dedicated
+                                                      repo deferred until demand shows)
 
 LAYER 2 — THE SERVICE   FrankX Foundry — frankx.ai/foundry
                         Evaluated installs for businesses we believe in.

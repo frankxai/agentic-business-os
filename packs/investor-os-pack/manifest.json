@@ -1,0 +1,10 @@
+{
+  "id": "investor-os-pack",
+  "name": "Investor OS",
+  "version": "0.1.0",
+  "kind": "vertical",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "Starlight Intelligence System (verticals/investment-intelligence — engine, schemas, gate doctrine)",
+  "entrypoint": "SKILL.md"
+}

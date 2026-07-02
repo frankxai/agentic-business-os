@@ -16,6 +16,7 @@ Standalone capabilities from the Agentic Business OS — each pack works **two w
 | [`business-intelligence-pack`](./business-intelligence-pack/) | memory | File-based business memory: decisions, market notes, weekly reviews. Check first, update after. |
 | [`design-contract-pack`](./design-contract-pack/) | authoring | Author a design.md + taste.md two-file contract for any brand. |
 | [`weekly-rhythm-pack`](./weekly-rhythm-pack/) | workflow | The founder-sized loop: Monday plan (10 min), Friday review (15 min). |
+| [`investor-os-pack`](./investor-os-pack/) | vertical | Disciplined investing practice: analysis → debate → risk gate → human decision → learning loop. Non-advisory, no execution, by design. |
 
 ## Pack anatomy
 
