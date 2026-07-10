@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI-Native Business Pathfinder"
+  short_description: "Turn one business process into a proof plan"
+  default_prompt: "Use $ai-native-business-pathfinder-pack to choose one AI-native business route and produce a seven-day proof plan."

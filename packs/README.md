@@ -12,7 +12,8 @@ Standalone capabilities from the Agentic Business OS — each pack works **two w
 
 | Pack | Kind | One line |
 |---|---|---|
-| [`claims-guard-pack`](./claims-guard-pack/) | gate | Zero-tolerance pre-publish audit for regulated claims, citations, and AI-tone. The load-bearing pack. |
+| [`ai-native-business-pathfinder-pack`](./ai-native-business-pathfinder-pack/) | strategy | Turn one process into an evidence-led offer, architecture choice, and seven-day proof plan. |
+| [`claims-guard-pack`](./claims-guard-pack/) | gate | Blocking pre-publish review for configured claim patterns, citations, and AI-tone. Not legal advice. |
 | [`business-intelligence-pack`](./business-intelligence-pack/) | memory | File-based business memory: decisions, market notes, weekly reviews. Check first, update after. |
 | [`design-contract-pack`](./design-contract-pack/) | authoring | Author a design.md + taste.md two-file contract for any brand. |
 | [`weekly-rhythm-pack`](./weekly-rhythm-pack/) | workflow | The founder-sized loop: Monday plan (10 min), Friday review (15 min). |
@@ -22,7 +23,9 @@ Standalone capabilities from the Agentic Business OS — each pack works **two w
 ```
 <pack-id>/
 ├── SKILL.md         # the capability — frontmatter (name, description) + instructions
-└── manifest.json    # id, name, version, kind, license, upstream, lineage, entrypoint
+├── manifest.json    # id, name, version, kind, license, upstream, lineage, entrypoint
+├── references/      # optional, self-contained detail loaded only when needed
+└── agents/openai.yaml # optional Codex UI metadata
 ```
 
 `SKILL.md` at the pack root is the contract: it's what Cowork reads on upload and what coding agents load. Keep it self-contained — a pack that references files outside itself isn't a pack.
