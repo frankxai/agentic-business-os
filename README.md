@@ -20,8 +20,8 @@ LAYER 1 — THE OS FAMILY
                         ├── agentic-health-os       → in development
                         └── agentic-investor-os     → in development
 
-LAYER 2 — THE SERVICE   FrankX Foundry — frankx.ai/foundry
-                        Evaluated installs for businesses we believe in.
+LAYER 2 — THE FOUNDRY  FrankX Foundry — frankx.ai/foundry
+                        Agent-delivered packs, apps, proof loops, and selective ventures.
 ```
 
 Every OS in the family inherits the same contract: a doctrine file (`CLAUDE.md`), a cross-tool card (`AGENTS.md`), an operating skill (`SKILL.md`), a two-file design contract (`design.md` + `taste.md`), pre-publish quality gates, and a file-based business memory (`docs/intelligence/`). The domains differ; the architecture doesn't.
@@ -37,6 +37,9 @@ Every OS in the family inherits the same contract: a doctrine file (`CLAUDE.md`)
 | **`docs/strategy/`** | The AI-Native Business Foundry direction: audience routes, product ladder, property ownership, trust gates, and compounding asset model. |
 | **`docs/architecture/`** | Runtime and capability routing: when to use chat agents, coding agents, Vercel, automation, OpenClaw, Hermes, MCP, or a governed swarm. |
 | **`data/foundry-product-registry.json`** | Machine-readable product truth: status, owner, licensing, price/checkout/delivery/support/update state, proof, and next gate. |
+| **`data/autonomous-foundry-control-plane.json`** | The next-phase contract: product autonomy, agent fleet, entitlements, service credits, commerce adapters, and venture economics. |
+| **`packages/foundry-control-plane/`** | Dependency-free executable reference for entitlement transitions, idempotent commerce events, append-only credits, overspend stops, settlement, release, and recovery. |
+| **`jobs/swarm/held/`** | Queue-compatible four-role build contracts, deliberately held outside the live Queen inbox until machine admission permits execution. |
 | **`GUIDE.md`** | The guided workflow: day-1 onboarding → the weekly rhythm → the gates. Read this first. |
 | **`HARNESS.md`** | The ownership contract: which files are yours forever, which receive upstream updates. |
 | **`.claude/commands/os-spawn.md`** | The guided derivation session that turns the template into *your* brand's OS. |
@@ -62,6 +65,24 @@ No coding agent? The packs work standalone — upload any `packs/*/SKILL.md` fol
 
 Starting from an idea, a job skill, or a business process? Use the standalone [`ai-native-business-pathfinder-pack`](./packs/ai-native-business-pathfinder-pack/) to select one buyer, one process, one architecture, and one seven-day proof plan before building.
 
+## The Autonomous Product Foundry
+
+The next Foundry phase replaces implementation-fee dependence with proof-gated, agent-delivered products. The customer pays for an outcome, entitlement, usage allowance, update path, or explicitly agreed commercial right—not Frank's hours.
+
+- [Master plan](./docs/strategy/autonomous-product-foundry-master-plan-2026-07-14.md)
+- [Product ladder and delivery](./docs/product/autonomous-product-ladder-and-delivery.md)
+- [Control-plane architecture](./docs/architecture/autonomous-foundry-control-plane.md)
+- [Partner and venture economics](./docs/product/partner-and-venture-economics.md)
+- [Experience specification](./docs/design/autonomous-foundry-experience-spec.md)
+- [Proof-gated roadmap](./docs/roadmap/autonomous-foundry-blitzscale-roadmap.md)
+
+The current hosted-agent status is **design-only**. The repository does not claim that Eve agents, credit billing, autonomous support, or public licensing are live. Run the registry validator to see the policy gates:
+
+```bash
+node scripts/validate-autonomous-foundry.mjs --self-test
+node --test packages/foundry-control-plane/tests/*.test.mjs
+```
+
 ## The model: brand is yours, machinery is shared
 
 Your doctrine, voice, design tokens, content, and business memory are **instance-owned — never overwritten**. The generic machinery (agents, command pipelines, gate logic) is **upstream-managed**: when it improves here, registered instances receive a pull request with a human-readable changelog. You read the diff, you merge or decline. Full contract: `HARNESS.md`.
@@ -70,9 +91,11 @@ Your doctrine, voice, design tokens, content, and business memory are **instance
 
 This template was extracted from a real production install (a European consumer-goods launch, 2026) — not designed only in the abstract. The load-bearing piece is **`@claims-guard`**: a blocking pre-publish review for configured claim patterns, citations, and brand voice, descended from frankx.ai's `@integrity-guard`. It supports human review; it is not a legal or regulatory compliance determination.
 
-## Getting an install
+## Getting activated
 
-The template is free and MIT-licensed — take it, it's yours. If you want it installed, adapted, and connected by the team that built it: **[frankx.ai/foundry](https://frankx.ai/foundry)**. The Foundry takes a small number of evaluated installs per quarter, with priority for sustainable, healthcare, and meaningful businesses.
+The template is free and MIT-licensed—take it and keep ownership. The Foundry direction is an agent-led route from workflow mapping to a verified pack or app, with a free path when that is sufficient. A small number of people Frank trusts may enter a design-partner or venture path, but that is a product-investment decision rather than a custom implementation service.
+
+Until the no-human-implementation gate passes, proposed paid packs, hosted agents, recurring operators, licenses, credits, and venture economics remain clearly labeled beta, design-only, or human-gated.
 
 ---
 

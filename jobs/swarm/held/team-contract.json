@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "starlight.held-team-contract.v1",
+  "id": "autonomous-foundry-wave-1",
+  "createdAt": "2026-07-14",
+  "status": "held-by-pp",
+  "sourceProfile": "frankx-product-revenue-team",
+  "requiredCapabilities": ["product-direction", "entitlements", "gtm", "evidence"],
+  "selectedRoles": [
+    {
+      "id": "coordinator",
+      "agent": "codex",
+      "writeScope": ["coordination/autonomous-foundry/**", "docs/decisions/autonomous-foundry/**"],
+      "output": "Bounded integration decision and handoff"
+    },
+    {
+      "id": "backend-data-engineer",
+      "agent": "codex",
+      "writeScope": ["packages/foundry-control-plane/**", "tests/foundry-control-plane/**"],
+      "output": "Transactional storage port and provider fixture adapters preserving the reference-domain invariants"
+    },
+    {
+      "id": "gtm-analytics-operator",
+      "agent": "antigravity",
+      "writeScope": ["analytics/autonomous-foundry/**", "experiments/autonomous-foundry/**", "content/drafts/autonomous-foundry/**"],
+      "output": "Value-first activation and measurement packet without external publication"
+    },
+    {
+      "id": "qa-release-sre-verifier",
+      "agent": "grok",
+      "writeScope": ["C:\\Users\\frank\\starlight\\queen\\reports\\autonomous-foundry-wave-1-verification-2026-07-14.md"],
+      "output": "Independent pass/fail verdict, evidence, residual risks, and rollback assessment"
+    }
+  ],
+  "excludedRoles": [
+    "frontend-experience-engineer until a public surface is authorized and browser QA is admitted",
+    "ux-design-motion-specialist until actual UI implementation begins",
+    "security-privacy-reviewer as a separate writer; security remains a verifier gate in this bounded wave",
+    "legal, finance, payout, sales, or external-send agents"
+  ],
+  "handoffOrder": ["coordinator", "backend-data-engineer", "gtm-analytics-operator", "qa-release-sre-verifier", "coordinator-integration"],
+  "humanGates": [
+    "production_high_risk",
+    "dns_change",
+    "secret_change",
+    "billing_change",
+    "spend",
+    "data_migration",
+    "destructive",
+    "external_send",
+    "legal_ip",
+    "brand_identity",
+    "permission_change"
+  ],
+  "activationRequirements": [
+    "pp preflight --workload swarm is not HOLD",
+    "coordination and business queue rechecked",
+    "one isolated worktree per writer",
+    "no overlapping write scopes",
+    "version-matched runtime docs available before runtime code",
+    "different-provider independent verification",
+    "durable resultRef for every job"
+  ]
+}

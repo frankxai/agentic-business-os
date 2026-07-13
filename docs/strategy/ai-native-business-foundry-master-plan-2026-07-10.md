@@ -1,6 +1,8 @@
 # AI-Native Business Foundry — master plan
 
-**Status:** proposed operating direction
+> **Commercial model superseded on 2026-07-14.** The audience routes and proof-first logic remain useful, but the manual sprint, implementation-fee, and early licensing ladder below is historical planning. The current direction is the [Autonomous Product Foundry master plan](./autonomous-product-foundry-master-plan-2026-07-14.md), which requires agent-delivered fulfillment and proof-gated licensing.
+
+**Status:** historical foundation; commercial ladder superseded
 **Date:** 2026-07-10
 **Owner:** FrankX
 **Canonical product:** `agentic-business-os`

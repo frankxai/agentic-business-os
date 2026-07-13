@@ -1,0 +1,14 @@
+{
+  "id": "autonomous-foundry-wave1-activation-analytics",
+  "priority": 5,
+  "agent": "antigravity",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\agentic-business-os",
+  "maxMinutes": 60,
+  "risk": "normal",
+  "allowDangerous": false,
+  "status": "held-by-pp",
+  "dependsOn": ["autonomous-foundry-wave1-coordinator", "autonomous-foundry-wave1-entitlement-credit-builder"],
+  "writeScope": ["analytics/autonomous-foundry/**", "experiments/autonomous-foundry/**", "content/drafts/autonomous-foundry/**"],
+  "resultRef": "C:\\Users\\frank\\starlight\\queen\\reports\\autonomous-foundry-wave1-activation-analytics.md",
+  "prompt": "Create a separate worktree and turn the chosen Wave 1 SKU into a value-first activation experiment. Define the event contract from workflow_map_started to first_win_verified, five route fixtures, five second-user activation scripts, success/failure thresholds, PII minimization, support escalation, and stay-free/not-ready/refer-out outcomes. Draft only; do not edit FrankX, Academy, community, checkout, production, tracking configuration, customer data, public pages, or send messages. Done when the experiment is executable from local fixtures, every event maps to a user-value decision, no dark pattern is present, and the resultRef records evidence, assumptions, and stop/kill criteria."
+}

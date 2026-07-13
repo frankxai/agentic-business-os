@@ -1,5 +1,7 @@
 # Offer, community, and activation architecture
 
+> **2026-07-14 update:** the proof-cell and value-first activation principles remain current. Guided/manual sprint and white-label sections are pre-autonomy concepts; paid delivery and licensing now follow the [autonomous product ladder](./autonomous-product-ladder-and-delivery.md) and its no-human-implementation gate.
+
 ## Activation thesis
 
 People do not need a larger content library. They need one route, a short time to first proof, and a social contract that rewards implementation.

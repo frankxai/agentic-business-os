@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastVerified": "2026-07-10",
+  "lastVerified": "2026-07-14",
   "offers": [
     {
       "id": "agentic-business-os",
@@ -20,7 +20,7 @@
     },
     {
       "id": "frankx-foundry-install",
-      "name": "FrankX Foundry Install",
+      "name": "FrankX Foundry Activation (legacy application)",
       "audience": ["founder", "SME"],
       "ownerRepo": "frankxai/frankx.ai-vercel-website",
       "surface": "https://www.frankx.ai/foundry",
@@ -32,7 +32,7 @@
       "supportStatus": "manual",
       "updateStatus": "automated-pr",
       "proof": ["live Foundry and guide routes", "application endpoint", "public first-install artifact narrative"],
-      "nextGate": "Document delivery capacity, scope, support, pricing, and case-study permissions before fixed public pricing."
+      "nextGate": "Keep the application informational while an agent-led activation reaches L3; do not create a new custom implementation-fee SKU."
     },
     {
       "id": "ai-native-business-pathfinder",
@@ -80,7 +80,7 @@
       "supportStatus": "proposed",
       "updateStatus": "proposed",
       "proof": [],
-      "nextGate": "Run a capacity-bounded manual pilot and verify three proof packets before public pricing."
+      "nextGate": "Replace the manual sprint hypothesis with an agent-delivered beta and verify five second-user activations before public pricing."
     },
     {
       "id": "foundry-operator-license",

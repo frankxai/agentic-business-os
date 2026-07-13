@@ -1,0 +1,14 @@
+{
+  "id": "autonomous-foundry-wave1-coordinator",
+  "priority": 3,
+  "agent": "codex",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\agentic-business-os",
+  "maxMinutes": 45,
+  "risk": "normal",
+  "allowDangerous": false,
+  "status": "held-by-pp",
+  "dependsOn": [],
+  "writeScope": ["coordination/autonomous-foundry/**", "docs/decisions/autonomous-foundry/**"],
+  "resultRef": "C:\\Users\\frank\\starlight\\queen\\reports\\autonomous-foundry-wave1-coordinator.md",
+  "prompt": "Re-read AGENTS.md, queen/COORDINATION.md, the current business queue, git branches, data/autonomous-foundry-control-plane.json, and the current PP preflight. Create a separate worktree. Confirm the smallest Wave 1 objective, one first SKU candidate, one commerce sandbox candidate, worker scopes, exact human gates, and stop conditions. Do not modify product runtime code, billing, provider accounts, production, or external systems. Done when a durable coordinator decision records the selected proof, rejects alternatives, confirms non-overlapping worktrees, and names the evidence each downstream worker must produce at the resultRef path."
+}

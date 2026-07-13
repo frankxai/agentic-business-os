@@ -1,0 +1,14 @@
+{
+  "id": "autonomous-foundry-wave1-independent-verifier",
+  "priority": 6,
+  "agent": "grok",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\agentic-business-os",
+  "maxMinutes": 75,
+  "risk": "normal",
+  "allowDangerous": false,
+  "status": "held-by-pp",
+  "dependsOn": ["autonomous-foundry-wave1-entitlement-credit-builder", "autonomous-foundry-wave1-activation-analytics"],
+  "writeScope": ["C:\\Users\\frank\\starlight\\queen\\reports\\autonomous-foundry-wave-1-verification-2026-07-14.md"],
+  "resultRef": "C:\\Users\\frank\\starlight\\queen\\reports\\autonomous-foundry-wave-1-verification-2026-07-14.md",
+  "prompt": "Verify Wave 1 read-only using a provider different from the builders. Inspect the coordinator decision, implementation diff, tests, event/activation fixtures, current PP state, and control-plane policy. Re-run safe tests. Adversarially test duplicate events, refund/revoke, overspend, failed settlement, cross-workspace access, unsupported claims, founder-dependent setup, affiliate bias, missing rollback, and hidden human fulfillment. Do not change release code, billing, secrets, provider accounts, public content, or production. Done only when the resultRef contains a PASS or FAIL verdict, exact evidence, failed gates, residual risks, rollback assessment, and the smallest remediation; absence of evidence is FAIL."
+}

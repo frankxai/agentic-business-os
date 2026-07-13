@@ -4,6 +4,12 @@ All notable changes. Versions follow semver; every release here can trigger sync
 
 ## Unreleased — AI-Native Business Foundry foundation
 
+- Added the Autonomous Product Foundry master plan, product ladder, provider-neutral control-plane architecture, partner/venture economics, premium experience spec, and proof-gated blitzscale roadmap
+- Added a machine-readable autonomy/product/agent/credit/commerce/venture control plane with dependency-free policy validation and negative self-tests
+- Added a dependency-free reference package for entitlement state, replay-safe normalized commerce events, append-only credit grants/reservations/settlements/releases, overspend stops, refund/revoke, failed-run recovery, and redacted receipts, with 17 passing tests
+- Replaced the future implementation-fee direction with agent-delivered outcomes and a no-human-implementation licensing gate; retained the prior plan as explicitly marked historical context
+- Added queue-compatible coordinator, entitlement/credit, activation/analytics, and independent-verifier job packets held outside the live Queen inbox while PP admission is `HOLD`
+- Recorded current runtime truth: no production Vercel Agent Run projects were observed in the preceding 30 days, so Eve and hosted Foundry agents remain design-only
 - Added the AI-Native Business Pathfinder portable skill, route matrix, proof-plan template, and harness command/agent
 - Added a machine-readable Foundry product registry with schema and validation
 - Added the GitHub estate audit, master strategy, offer/community architecture, capability router, team contract, and 90-day execution plan

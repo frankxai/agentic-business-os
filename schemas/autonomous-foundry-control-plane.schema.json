@@ -1,0 +1,385 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/frankxai/agentic-business-os/schemas/autonomous-foundry-control-plane.schema.json",
+  "title": "Starlight Autonomous Product Foundry Control Plane",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "lastVerified",
+    "program",
+    "observedState",
+    "autonomyLevels",
+    "licenseGate",
+    "products",
+    "agentFleet",
+    "creditEconomy",
+    "commercePolicy",
+    "ventureModel",
+    "humanGates"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "lastVerified": { "type": "string", "format": "date" },
+    "program": {
+      "type": "object",
+      "required": ["id", "name", "owner", "canonicalRepo", "thesis", "commercialRule"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/nonEmpty" },
+        "owner": { "$ref": "#/$defs/nonEmpty" },
+        "canonicalRepo": { "$ref": "#/$defs/nonEmpty" },
+        "thesis": { "$ref": "#/$defs/nonEmpty" },
+        "commercialRule": { "$ref": "#/$defs/nonEmpty" }
+      },
+      "additionalProperties": false
+    },
+    "observedState": {
+      "type": "object",
+      "required": ["asOf", "vercelAgentRunProjectsLast30Days", "runtimeClaim", "ppAdmission", "queueDispatched", "evidence"],
+      "properties": {
+        "asOf": { "type": "string", "format": "date" },
+        "vercelAgentRunProjectsLast30Days": { "type": "integer", "minimum": 0 },
+        "runtimeClaim": { "enum": ["design-only", "preview-verified", "production-verified"] },
+        "ppAdmission": { "enum": ["allowed", "bounded", "held"] },
+        "queueDispatched": { "type": "boolean" },
+        "evidence": { "$ref": "#/$defs/nonEmptyStringArray" }
+      },
+      "additionalProperties": false
+    },
+    "autonomyLevels": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "publicPaidEligible", "ownUseLicenseEligible", "resaleLicenseEligible", "recurringEligible"],
+        "properties": {
+          "id": { "$ref": "#/$defs/autonomyId" },
+          "name": { "$ref": "#/$defs/nonEmpty" },
+          "description": { "$ref": "#/$defs/nonEmpty" },
+          "publicPaidEligible": { "type": "boolean" },
+          "ownUseLicenseEligible": { "type": "boolean" },
+          "resaleLicenseEligible": { "type": "boolean" },
+          "recurringEligible": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "licenseGate": {
+      "type": "object",
+      "required": ["minimumOwnUseLevel", "minimumRecurringLevel", "minimumResaleLevel", "requirements"],
+      "properties": {
+        "minimumOwnUseLevel": { "$ref": "#/$defs/autonomyId" },
+        "minimumRecurringLevel": { "$ref": "#/$defs/autonomyId" },
+        "minimumResaleLevel": { "$ref": "#/$defs/autonomyId" },
+        "requirements": { "$ref": "#/$defs/nonEmptyStringArray" }
+      },
+      "additionalProperties": false
+    },
+    "products": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/product" }
+    },
+    "agentFleet": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/agent" }
+    },
+    "creditEconomy": { "$ref": "#/$defs/creditEconomy" },
+    "commercePolicy": { "$ref": "#/$defs/commercePolicy" },
+    "ventureModel": { "$ref": "#/$defs/ventureModel" },
+    "humanGates": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/snakeId" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nonEmpty": { "type": "string", "minLength": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "snakeId": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "autonomyId": { "enum": ["L0", "L1", "L2", "L3", "L4", "L5"] },
+    "nonEmptyStringArray": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/nonEmpty" }
+    },
+    "product": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "audience",
+        "outcome",
+        "ownerSurface",
+        "experienceSurface",
+        "maturity",
+        "autonomyLevel",
+        "claimStatus",
+        "revenueStreams",
+        "commerce",
+        "entitlement",
+        "credits",
+        "delivery",
+        "runtime",
+        "support",
+        "proof",
+        "nextGate",
+        "humanGates"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/nonEmpty" },
+        "kind": {
+          "enum": [
+            "open-substrate",
+            "skill-pack",
+            "starlight-pack",
+            "agent-app",
+            "agent-swarm-pack",
+            "operator-loop",
+            "academy-lab",
+            "proof-community",
+            "private-domain-plugin",
+            "venture-program"
+          ]
+        },
+        "audience": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "outcome": { "$ref": "#/$defs/nonEmpty" },
+        "ownerSurface": { "$ref": "#/$defs/nonEmpty" },
+        "experienceSurface": { "type": ["string", "null"] },
+        "maturity": { "enum": ["live", "validated", "prototype", "proposed", "blocked"] },
+        "autonomyLevel": { "$ref": "#/$defs/autonomyId" },
+        "claimStatus": { "enum": ["verified", "partial", "unverified"] },
+        "revenueStreams": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "one-time",
+              "update-pass",
+              "subscription",
+              "service-credits",
+              "membership",
+              "product-bundle",
+              "affiliate",
+              "partner-royalty",
+              "net-receipts-share",
+              "venture-upside"
+            ]
+          }
+        },
+        "commerce": { "$ref": "#/$defs/commerce" },
+        "entitlement": { "$ref": "#/$defs/entitlement" },
+        "credits": { "$ref": "#/$defs/productCredits" },
+        "delivery": { "$ref": "#/$defs/delivery" },
+        "runtime": { "$ref": "#/$defs/runtime" },
+        "support": { "$ref": "#/$defs/support" },
+        "proof": { "type": "array", "items": { "$ref": "#/$defs/nonEmpty" } },
+        "nextGate": { "$ref": "#/$defs/nonEmpty" },
+        "humanGates": { "type": "array", "items": { "$ref": "#/$defs/snakeId" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "commerce": {
+      "type": "object",
+      "required": ["provider", "mode", "status"],
+      "properties": {
+        "provider": { "enum": ["none", "polar", "lemon-squeezy", "existing-provider", "undecided"] },
+        "mode": { "$ref": "#/$defs/nonEmpty" },
+        "status": { "enum": ["not-applicable", "not-configured", "sandbox", "live"] }
+      },
+      "additionalProperties": false
+    },
+    "entitlement": {
+      "type": "object",
+      "required": ["type", "status"],
+      "properties": {
+        "type": { "$ref": "#/$defs/nonEmpty" },
+        "status": { "enum": ["verified", "manual", "design-only"] }
+      },
+      "additionalProperties": false
+    },
+    "productCredits": {
+      "type": "object",
+      "required": ["enabled", "policyId"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "policyId": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "delivery": {
+      "type": "object",
+      "required": ["mode", "status"],
+      "properties": {
+        "mode": { "$ref": "#/$defs/nonEmpty" },
+        "status": { "enum": ["verified", "manual-verified", "prototype", "not-verified"] }
+      },
+      "additionalProperties": false
+    },
+    "runtime": {
+      "type": "object",
+      "required": ["target", "status"],
+      "properties": {
+        "target": { "$ref": "#/$defs/nonEmpty" },
+        "status": { "enum": ["not-applicable", "packaged-only", "design-only", "not-deployed", "preview-verified", "production-verified"] }
+      },
+      "additionalProperties": false
+    },
+    "support": {
+      "type": "object",
+      "required": ["mode", "status"],
+      "properties": {
+        "mode": { "$ref": "#/$defs/nonEmpty" },
+        "status": { "enum": ["documented", "proposed", "verified"] }
+      },
+      "additionalProperties": false
+    },
+    "agent": {
+      "type": "object",
+      "required": [
+        "id",
+        "role",
+        "outcome",
+        "currentAutonomyLevel",
+        "runtimeTarget",
+        "runtimeStatus",
+        "triggers",
+        "allowedTools",
+        "writeScopes",
+        "approvalActions",
+        "receiptFields",
+        "successMetric",
+        "nextGate"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "role": { "$ref": "#/$defs/nonEmpty" },
+        "outcome": { "$ref": "#/$defs/nonEmpty" },
+        "currentAutonomyLevel": { "$ref": "#/$defs/autonomyId" },
+        "runtimeTarget": { "$ref": "#/$defs/nonEmpty" },
+        "runtimeStatus": { "enum": ["packaged-only", "design-only", "preview-verified", "production-verified"] },
+        "triggers": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "allowedTools": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "writeScopes": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "approvalActions": { "type": "array", "items": { "$ref": "#/$defs/nonEmpty" } },
+        "receiptFields": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "successMetric": { "$ref": "#/$defs/nonEmpty" },
+        "nextGate": { "$ref": "#/$defs/nonEmpty" }
+      },
+      "additionalProperties": false
+    },
+    "creditEconomy": {
+      "type": "object",
+      "required": ["name", "unit", "transferable", "cashValue", "redeemableForCash", "investmentInstrument", "publicPricingStatus", "policies", "actionRates", "accountingRules"],
+      "properties": {
+        "name": { "$ref": "#/$defs/nonEmpty" },
+        "unit": { "$ref": "#/$defs/nonEmpty" },
+        "transferable": { "type": "boolean" },
+        "cashValue": { "type": "boolean" },
+        "redeemableForCash": { "type": "boolean" },
+        "investmentInstrument": { "type": "boolean" },
+        "publicPricingStatus": { "enum": ["hypothesis", "verified"] },
+        "policies": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "grant", "cadence", "rolloverCap", "topUpEligible", "status"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "grant": { "type": "number", "minimum": 0 },
+              "cadence": { "$ref": "#/$defs/nonEmpty" },
+              "rolloverCap": { "type": "number", "minimum": 0 },
+              "topUpEligible": { "type": "boolean" },
+              "status": { "enum": ["hypothesis", "human-gated", "verified"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "actionRates": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["action", "credits", "status"],
+            "properties": {
+              "action": { "$ref": "#/$defs/id" },
+              "credits": { "type": "number", "minimum": 0 },
+              "status": { "enum": ["hypothesis", "verified"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "accountingRules": { "$ref": "#/$defs/nonEmptyStringArray" }
+      },
+      "additionalProperties": false
+    },
+    "commercePolicy": {
+      "type": "object",
+      "required": ["sourceOfTruth", "oneProviderPerSku", "providerAdapters", "normalizedEventFields", "affiliateRules"],
+      "properties": {
+        "sourceOfTruth": { "$ref": "#/$defs/nonEmpty" },
+        "oneProviderPerSku": { "type": "boolean" },
+        "providerAdapters": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "status", "bestFor", "notFor", "decision"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "status": { "enum": ["research-verified", "preserve-until-decided", "sandbox-verified", "live"] },
+              "bestFor": { "$ref": "#/$defs/nonEmptyStringArray" },
+              "notFor": { "$ref": "#/$defs/nonEmptyStringArray" },
+              "decision": { "$ref": "#/$defs/nonEmpty" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "normalizedEventFields": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "affiliateRules": { "$ref": "#/$defs/nonEmptyStringArray" }
+      },
+      "additionalProperties": false
+    },
+    "ventureModel": {
+      "type": "object",
+      "required": ["partnerTypes", "scoreWeights", "considerationThreshold", "distributableNetReceipts", "allocationStates", "rules"],
+      "properties": {
+        "partnerTypes": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "scoreWeights": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["factor", "weight"],
+            "properties": {
+              "factor": { "$ref": "#/$defs/id" },
+              "weight": { "type": "integer", "minimum": 0, "maximum": 100 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "considerationThreshold": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "distributableNetReceipts": {
+          "type": "object",
+          "required": ["startingPoint", "deductions", "excludes"],
+          "properties": {
+            "startingPoint": { "$ref": "#/$defs/nonEmpty" },
+            "deductions": { "$ref": "#/$defs/nonEmptyStringArray" },
+            "excludes": { "$ref": "#/$defs/nonEmptyStringArray" }
+          },
+          "additionalProperties": false
+        },
+        "allocationStates": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "rules": { "$ref": "#/$defs/nonEmptyStringArray" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

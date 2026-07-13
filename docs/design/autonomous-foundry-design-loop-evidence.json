@@ -1,0 +1,116 @@
+{
+  "version": "2026-06-23",
+  "task": "Define and visually curate the Autonomous Product Foundry system, page architecture, and proof-gated customer journey.",
+  "surface": "Architecture documentation and future FrankX Foundry, portal, Academy, and community experience specification.",
+  "audience": "Frank, selected collaborators, product builders, independent verifiers, and future Foundry customers.",
+  "first_read": "Turn one workflow into a verified agent-delivered product without buying Frank's implementation hours.",
+  "standards": [
+    "design-agent-standards/OUTCOMES.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+    "DESIGN_TASTE.md",
+    "WEB_EXPERIENCE_STANDARD.md",
+    "VISUAL_QA_GATE.md",
+    "starlight-design-intelligence/brand-packs/frankx/DESIGN.md"
+  ],
+  "references": [
+    {
+      "label": "FrankX brand design system",
+      "source": "C:/Users/frank/starlight/repos/starlight-design-intelligence/brand-packs/frankx/DESIGN.md",
+      "reason": "Provides the restrained dual-spectrum obsidian system and technical editorial posture."
+    },
+    {
+      "label": "Premium asset standard",
+      "source": "C:/Users/frank/starlight/repos/design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+      "reason": "Requires the correct asset tier and blocks abstract filler or fake UI as proof."
+    },
+    {
+      "label": "Autonomous Foundry control plane",
+      "source": "docs/architecture/autonomous-foundry-control-plane.md",
+      "reason": "Supplies the exact system relationships represented by the diagrams."
+    }
+  ],
+  "direction": {
+    "keep": [
+      "Exact product and architecture relationships",
+      "Clear live, prototype, design-only, and human-gated status",
+      "FrankX editorial restraint and proof-first hierarchy",
+      "A prose or table equivalent next to every diagram"
+    ],
+    "avoid": [
+      "AI orbs, node clouds, generic 3D primitives, and decorative system maps",
+      "Fake dashboards, fabricated metrics, and unlabeled fixtures",
+      "Garish gradients, crowded card grids, and sales-pressure patterns",
+      "Public UI claims before actual preview inspection"
+    ],
+    "signature": "The Outcome Receipt evolves from workflow to product, entitlement, agent run, verification, credits, release, and rollback.",
+    "system": [
+      "Obsidian background and restrained emerald/cyan technical signals",
+      "Amber only for human value and approval boundaries",
+      "Outfit or Poppins display, Inter body, JetBrains Mono receipts",
+      "Tier C exact vector diagrams now; Tier A redacted real receipts when product runs exist",
+      "Motion expresses causality and state only, with a complete reduced-motion route"
+    ]
+  },
+  "asset_quality": {
+    "tier": "C",
+    "source_method": "vector-diagram",
+    "provenance": "owned",
+    "why_premium": "Exact system-authored diagrams and an ownable Outcome Receipt are the correct medium for a control-plane specification; generated decoration would reduce trust.",
+    "shortcut_risk": "low",
+    "context_tested": false
+  },
+  "artifacts": [
+    {
+      "path_or_url": "docs/strategy/autonomous-product-foundry-master-plan-2026-07-14.md",
+      "kind": "ui",
+      "inspected": true,
+      "notes": "Text and Mermaid source inspected; diagrams have adjacent prose/table equivalents."
+    },
+    {
+      "path_or_url": "docs/architecture/autonomous-foundry-control-plane.md",
+      "kind": "ui",
+      "inspected": true,
+      "notes": "Control-plane and entitlement state relationships inspected in source form."
+    },
+    {
+      "path_or_url": "docs/design/autonomous-foundry-experience-spec.md",
+      "kind": "web",
+      "inspected": true,
+      "notes": "Page, state, asset, accessibility, and motion contracts inspected; no rendered page exists yet."
+    }
+  ],
+  "checks": [
+    {
+      "name": "asset-tier",
+      "status": "pass",
+      "evidence": "Tier C exact vector/system diagrams are the correct medium for architecture documentation."
+    },
+    {
+      "name": "export-inspection",
+      "status": "blocked",
+      "evidence": "No public UI or rendered diagram export was produced because PP admission is HOLD; source inspection is not substituted for browser inspection."
+    },
+    {
+      "name": "visual-qa",
+      "status": "blocked",
+      "evidence": "Desktop/mobile/reduced-motion QA begins only when an authorized preview implementation exists."
+    },
+    {
+      "name": "exact-information",
+      "status": "pass",
+      "evidence": "Every visual relationship is sourced from the machine-readable control-plane contract and accompanied by text."
+    }
+  ],
+  "score": {
+    "total": 24,
+    "max": 30,
+    "notes": "Strongest: the Outcome Receipt gives the system an ownable proof language. Weakest: no rendered implementation or responsive inspection exists. Change after critique: all abstract hero concepts were removed in favor of exact diagrams and future real receipts. Decision: iterate before any public ship."
+  },
+  "decision": "iterate",
+  "known_risks": [
+    "Mermaid rendering can vary by host and must be inspected where the docs are published.",
+    "A future UI could drift into generic dashboards unless the Outcome Receipt remains the primary proof object.",
+    "The experience cannot score as shippable until real product receipts and a Vercel preview are inspected."
+  ]
+}

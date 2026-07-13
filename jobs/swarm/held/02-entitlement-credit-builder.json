@@ -1,0 +1,14 @@
+{
+  "id": "autonomous-foundry-wave1-entitlement-credit-builder",
+  "priority": 4,
+  "agent": "codex",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\agentic-business-os",
+  "maxMinutes": 90,
+  "risk": "normal",
+  "allowDangerous": false,
+  "status": "held-by-pp",
+  "dependsOn": ["autonomous-foundry-wave1-coordinator"],
+  "writeScope": ["packages/foundry-control-plane/**", "tests/foundry-control-plane/**"],
+  "resultRef": "C:\\Users\\frank\\starlight\\queen\\reports\\autonomous-foundry-wave1-entitlement-credit-builder.md",
+  "prompt": "Use the approved coordinator decision and create a separate worktree. Extend the dependency-free reference under packages/foundry-control-plane with a transactional storage port and normalized Polar/Lemon fixture adapters. Preserve idempotency, reserve, settle, release, expiry, revoke, refund, duplicate-event, overspend-stop, and recovery invariants; add concurrency and out-of-order-event tests. Use fixtures only: no live provider SDK, secret, webhook, migration, billing activation, or network write. Do not edit docs, analytics, GTM, release, or verifier paths. Done when scoped tests pass, public APIs and invariants match data/autonomous-foundry-control-plane.json, a rollback path exists, and a resultRef report lists changed paths, commands, evidence, known risks, and the next provider-sandbox contract."
+}
