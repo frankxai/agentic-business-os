@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/global-builder-fellowship-pilot.schema.json",
+  "title": "Starlight Global Builder Fellowship pilot contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "program",
+    "pilot",
+    "stages",
+    "selection",
+    "participantProtections",
+    "supporterRoom",
+    "externalActions",
+    "approvalGates",
+    "integrationContracts",
+    "successSignals",
+    "stopConditions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "starlight.globalBuilderFellowshipPilot.v1"
+    },
+    "program": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workingName", "state", "thesis"],
+      "properties": {
+        "workingName": { "type": "string", "minLength": 3 },
+        "state": { "enum": ["draft-only", "approved-pilot", "active", "retired"] },
+        "thesis": { "type": "string", "minLength": 40 }
+      }
+    },
+    "pilot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maximumFellows", "sprintWeeks", "markets", "countryAdmissionRule", "selectionMode"],
+      "properties": {
+        "maximumFellows": { "type": "integer", "minimum": 1, "maximum": 30 },
+        "sprintWeeks": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "markets": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 2 },
+          "uniqueItems": true
+        },
+        "countryAdmissionRule": { "type": "string", "minLength": 80 },
+        "selectionMode": { "const": "blind-first-round-two-independent-reviewers" }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "decision", "output"],
+        "properties": {
+          "id": { "type": "string", "minLength": 2 },
+          "decision": { "type": "string", "minLength": 12 },
+          "output": { "type": "string", "minLength": 12 }
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["blindFirstReview", "minimumIndependentReviewers", "criteria", "excludedSignals"],
+      "properties": {
+        "blindFirstReview": { "const": true },
+        "minimumIndependentReviewers": { "type": "integer", "minimum": 2 },
+        "criteria": {
+          "type": "array",
+          "minItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "weight"],
+            "properties": {
+              "id": { "type": "string", "minLength": 3 },
+              "weight": { "type": "integer", "minimum": 1, "maximum": 100 }
+            }
+          }
+        },
+        "excludedSignals": { "type": "array", "minItems": 3, "items": { "type": "string" } }
+      }
+    },
+    "participantProtections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ipDefault", "compensation", "dataBoundary", "publicity", "appeal"],
+      "properties": {
+        "ipDefault": { "type": "string", "minLength": 40 },
+        "compensation": { "type": "string", "minLength": 40 },
+        "dataBoundary": { "type": "string", "minLength": 40 },
+        "publicity": { "type": "string", "minLength": 40 },
+        "appeal": { "type": "string", "minLength": 20 }
+      }
+    },
+    "supporterRoom": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "allowed", "forbidden"],
+      "properties": {
+        "state": { "enum": ["proposed-private", "approved-private", "retired"] },
+        "allowed": { "type": "array", "minItems": 2, "items": { "type": "string" } },
+        "forbidden": { "type": "array", "minItems": 5, "items": { "type": "string" } }
+      }
+    },
+    "externalActions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowed", "blocked"],
+      "properties": {
+        "allowed": { "type": "boolean" },
+        "blocked": { "type": "array", "minItems": 4, "items": { "type": "string" } }
+      }
+    },
+    "approvalGates": { "type": "array", "minItems": 6, "items": { "type": "string" } },
+    "integrationContracts": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["surface", "role", "boundary"],
+        "properties": {
+          "surface": { "type": "string" },
+          "role": { "type": "string", "minLength": 15 },
+          "boundary": { "type": "string", "minLength": 15 }
+        }
+      }
+    },
+    "successSignals": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+    "stopConditions": { "type": "array", "minItems": 5, "items": { "type": "string" } }
+  }
+}

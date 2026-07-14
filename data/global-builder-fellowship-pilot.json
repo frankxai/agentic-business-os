@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "starlight.globalBuilderFellowshipPilot.v1",
+  "program": {
+    "workingName": "Starlight Global Builder Fellowship",
+    "state": "draft-only",
+    "thesis": "Discover overlooked builders through locally stewarded proof challenges, support them to create participant-owned artifacts, and offer consent-gated community and opportunity paths without treating people as cheap labor or promising investment."
+  },
+  "pilot": {
+    "maximumFellows": 24,
+    "sprintWeeks": 6,
+    "markets": [
+      "Japan",
+      "Philippines",
+      "Indonesia"
+    ],
+    "countryAdmissionRule": "No market opens until it passes the country partner gate with a compensated local steward, co-authored challenge, language/access plan, payment and safeguarding review, participant-first IP terms, and a human approval receipt.",
+    "selectionMode": "blind-first-round-two-independent-reviewers"
+  },
+  "stages": [
+    {
+      "id": "discover",
+      "decision": "Is there a locally supported, safe, and useful challenge?",
+      "output": "Country admission receipt and co-authored challenge brief"
+    },
+    {
+      "id": "prove",
+      "decision": "Does the submission show problem intimacy, a smallest proof, learning velocity, and trust awareness?",
+      "output": "Participant-controlled proof packet and two independent review records"
+    },
+    {
+      "id": "build",
+      "decision": "Can the fellow improve a bounded artifact with evidence and peer support?",
+      "output": "Demo, evaluation cases, evidence log, and next-route decision"
+    },
+    {
+      "id": "connect",
+      "decision": "What community, customer-learning, mentor, or support route does the fellow explicitly choose?",
+      "output": "Consent-scoped proof packet and introduction preferences"
+    },
+    {
+      "id": "compound",
+      "decision": "Should the work remain independent, enter alumni support, become a design partner, or be referred elsewhere?",
+      "output": "Participant-approved next-step record"
+    }
+  ],
+  "selection": {
+    "blindFirstReview": true,
+    "minimumIndependentReviewers": 2,
+    "criteria": [
+      {
+        "id": "problem-intimacy",
+        "weight": 30
+      },
+      {
+        "id": "evidence-of-making",
+        "weight": 25
+      },
+      {
+        "id": "learning-velocity",
+        "weight": 20
+      },
+      {
+        "id": "safety-rights-trust",
+        "weight": 15
+      },
+      {
+        "id": "community-contribution",
+        "weight": 10
+      }
+    ],
+    "excludedSignals": [
+      "social-following",
+      "ability-to-pay",
+      "elite-affiliation",
+      "english-polish-as-a-proxy-for-merit"
+    ]
+  },
+  "participantProtections": {
+    "ipDefault": "Participants retain pre-existing and project IP by default. Program participation, prizes, review, and introductions do not transfer ownership.",
+    "compensation": "No stipend, prize, or payment is promised until a human-approved country-specific payment, tax, and classification route exists.",
+    "dataBoundary": "Identity/contact data, blind reviewer packets, consent choices, and supporter interest stay separate and least-privilege.",
+    "publicity": "Artifacts, names, locations, images, and stories remain private unless the participant explicitly opts in.",
+    "appeal": "Applicants may request an explanation and process-error review."
+  },
+  "supporterRoom": {
+    "state": "proposed-private",
+    "allowed": [
+      "opt-in feedback",
+      "mentor office hours",
+      "customer-learning introductions",
+      "participant-requested non-binding supporter introductions"
+    ],
+    "forbidden": [
+      "public investment solicitation",
+      "transaction-based introduction fees",
+      "participant-data sharing without consent",
+      "preselected winners",
+      "unpaid sponsor or client work",
+      "automatic equity, revenue-share, employment, or IP claims"
+    ]
+  },
+  "externalActions": {
+    "allowed": false,
+    "blocked": [
+      "outreach",
+      "participant intake",
+      "public publication",
+      "payments or prizes",
+      "sponsor agreements",
+      "investor introductions",
+      "domain registration or deployment"
+    ]
+  },
+  "approvalGates": [
+    "country-partner-and-listening-review",
+    "participant-terms-ip-privacy-safeguarding-review",
+    "payment-tax-and-classification-review",
+    "budget-and-steward-compensation-approval",
+    "public-claims-and-brand-approval",
+    "supporter-boundary-and-conflict-review",
+    "separate-legal-review-for-any-investment-or-commercial-transaction"
+  ],
+  "integrationContracts": [
+    {
+      "surface": "agentic-business-os",
+      "role": "Canonical Foundry doctrine, proof routing, and venture boundaries",
+      "boundary": "Not a participant CRM or live-program claim"
+    },
+    {
+      "surface": "gencreator.community",
+      "role": "Participant-controlled proof packet",
+      "boundary": "Not a community simulation or member directory"
+    },
+    {
+      "surface": "starlight-communities",
+      "role": "Proof-cell cadence and steward operations",
+      "boundary": "No duplicate hosted community build"
+    },
+    {
+      "surface": "vibeclubs.ai",
+      "role": "Optional focus-session ritual",
+      "boundary": "Not the participant system of record"
+    },
+    {
+      "surface": "agentic-investor-os",
+      "role": "Private consent-gated supporter readiness",
+      "boundary": "No public offering, fund, or automated investor matching"
+    }
+  ],
+  "successSignals": [
+    "participants report clear ownership and fair treatment",
+    "two independent reviewers score every selected submission",
+    "each fellow finishes an evidence-backed artifact or informed pause decision",
+    "any supporter introduction is explicit, requested, and useful",
+    "the cohort can stop cleanly without retaining participant data or obligations it cannot honor"
+  ],
+  "stopConditions": [
+    "missing local steward or language/access plan",
+    "missing payment, privacy, safeguarding, or IP review",
+    "unpaid client or sponsor work becomes a participation condition",
+    "supporter access is not consent-gated",
+    "public claims outrun verified activity",
+    "cohort size exceeds steward and reviewer capacity"
+  ]
+}

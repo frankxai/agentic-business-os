@@ -11,6 +11,15 @@
       "harnessVersion": "v0.1.2"
     },
     {
+      "id": "global-builder-fellowship-pack",
+      "name": "Global Builder Fellowship",
+      "version": "0.1.0",
+      "kind": "workflow",
+      "summary": "Design a fair, proof-first talent discovery and builder fellowship with participant ownership, local stewardship, and consent-gated opportunity paths.",
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
+    },
+    {
       "id": "claims-guard-pack",
       "name": "Claims Guard",
       "version": "0.1.0",

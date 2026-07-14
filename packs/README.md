@@ -13,6 +13,7 @@ Standalone capabilities from the Agentic Business OS — each pack works **two w
 | Pack | Kind | One line |
 |---|---|---|
 | [`ai-native-business-pathfinder-pack`](./ai-native-business-pathfinder-pack/) | strategy | Turn one process into an evidence-led offer, architecture choice, and seven-day proof plan. |
+| [`global-builder-fellowship-pack`](./global-builder-fellowship-pack/) | workflow | Design a participant-first talent discovery and builder fellowship with local stewardship and consent-gated opportunity paths. |
 | [`claims-guard-pack`](./claims-guard-pack/) | gate | Blocking pre-publish review for configured claim patterns, citations, and AI-tone. Not legal advice. |
 | [`business-intelligence-pack`](./business-intelligence-pack/) | memory | File-based business memory: decisions, market notes, weekly reviews. Check first, update after. |
 | [`design-contract-pack`](./design-contract-pack/) | authoring | Author a design.md + taste.md two-file contract for any brand. |

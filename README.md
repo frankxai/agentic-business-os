@@ -38,6 +38,7 @@ Every OS in the family inherits the same contract: a doctrine file (`CLAUDE.md`)
 | **`docs/architecture/`** | Runtime and capability routing: when to use chat agents, coding agents, Vercel, automation, OpenClaw, Hermes, MCP, or a governed swarm. |
 | **`data/foundry-product-registry.json`** | Machine-readable product truth: status, owner, licensing, price/checkout/delivery/support/update state, proof, and next gate. |
 | **`data/autonomous-foundry-control-plane.json`** | The next-phase contract: product autonomy, agent fleet, entitlements, service credits, commerce adapters, and venture economics. |
+| **`docs/global-builder-fellowship/`** | Draft-only Global Builder Fellowship: a participant-first talent discovery → proof → build → community → opportunity model with local-partner and investor-safety gates. |
 | **`packages/foundry-control-plane/`** | Dependency-free executable reference for entitlement transitions, idempotent commerce events, append-only credits, overspend stops, settlement, release, and recovery. |
 | **`jobs/swarm/held/`** | Queue-compatible four-role build contracts, deliberately held outside the live Queen inbox until machine admission permits execution. |
 | **`GUIDE.md`** | The guided workflow: day-1 onboarding → the weekly rhythm → the gates. Read this first. |
@@ -81,6 +82,28 @@ The current hosted-agent status is **design-only**. The repository does not clai
 ```bash
 node scripts/validate-autonomous-foundry.mjs --self-test
 node --test packages/foundry-control-plane/tests/*.test.mjs
+```
+
+## The Global Builder Fellowship
+
+The Foundry can also support a small, locally stewarded talent-to-venture
+fellowship—not a labor marketplace or investment-pitch machine. The draft
+program is explicitly participant-first: proof challenges feed a paid build
+fellowship, participant-controlled proof packets, small community cells, and
+only opt-in supporter paths. It starts with country partner, language,
+accessibility, payment, IP, safeguarding, and privacy gates; no public launch,
+participant intake, payment, investment introduction, or domain action is
+authorized by the package.
+
+- [Program overview](./docs/global-builder-fellowship/README.md)
+- [Operating model](./docs/global-builder-fellowship/OPERATING_MODEL.md)
+- [90-day draft launch packet](./docs/global-builder-fellowship/LAUNCH_PACKET.md)
+- [Standalone Global Builder Fellowship pack](./packs/global-builder-fellowship-pack/)
+
+Validate the draft contract with:
+
+```bash
+node scripts/validate-global-builder-fellowship.mjs
 ```
 
 ## The model: brand is yours, machinery is shared

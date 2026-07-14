@@ -1,0 +1,10 @@
+{
+  "id": "global-builder-fellowship-pack",
+  "name": "Global Builder Fellowship",
+  "version": "0.1.0",
+  "kind": "workflow",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "Starlight proof-first community, participant protection, and Foundry relationship-gate pattern",
+  "entrypoint": "SKILL.md"
+}
