@@ -2,6 +2,15 @@
   "registryVersion": "1.0",
   "packs": [
     {
+      "id": "order-fulfilment-pack",
+      "name": "Order Fulfilment Activation",
+      "version": "0.1.0",
+      "kind": "workflow",
+      "summary": "Assess native ERP shipping first, then simulate a buyer-owned, dry-run-first path for any verified fulfilment gap. Local preview; no live connector.",
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
+    },
+    {
       "id": "claims-guard-pack",
       "name": "Claims Guard",
       "version": "0.1.0",

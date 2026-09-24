@@ -1,0 +1,25 @@
+{
+  "setup": {
+    "erp": "weclapp",
+    "carrier": "DHL Paket DE",
+    "capabilitiesVerifiedInAccount": true,
+    "nativeLabel": true,
+    "nativeTrackingWriteback": true,
+    "nativePrinterRouting": false,
+    "apiAccess": true,
+    "carrierContractConfirmed": true,
+    "sourceOfTruth": "erp",
+    "humanOwner": "shipping-lead",
+    "verificationNote": "Synthetic fixture only; verify native capabilities in the buyer account"
+  },
+  "order": {
+    "id": "DEMO-ORDER-001",
+    "status": "READY_TO_SHIP",
+    "destinationCountry": "DE",
+    "addressVerified": true,
+    "packages": [
+      { "weightKg": 4.2, "lengthCm": 40, "widthCm": 30, "heightCm": 20 }
+    ],
+    "existingShipmentIds": []
+  }
+}

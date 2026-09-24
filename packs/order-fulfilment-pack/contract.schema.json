@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Order Fulfilment Activation dry-run input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["setup", "order"],
+  "properties": {
+    "setup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["erp", "carrier", "capabilitiesVerifiedInAccount", "nativeLabel", "nativeTrackingWriteback", "nativePrinterRouting", "apiAccess", "carrierContractConfirmed", "sourceOfTruth", "humanOwner", "verificationNote"],
+      "properties": {
+        "erp": { "type": "string", "minLength": 1 },
+        "carrier": { "type": "string", "minLength": 1 },
+        "capabilitiesVerifiedInAccount": { "type": "boolean" },
+        "nativeLabel": { "type": "boolean" },
+        "nativeTrackingWriteback": { "type": "boolean" },
+        "nativePrinterRouting": { "type": "boolean" },
+        "apiAccess": { "type": "boolean" },
+        "carrierContractConfirmed": { "type": "boolean" },
+        "sourceOfTruth": { "const": "erp" },
+        "humanOwner": { "type": "string", "minLength": 1 },
+        "verificationNote": { "type": "string", "minLength": 1 }
+      }
+    },
+    "order": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "destinationCountry", "addressVerified", "packages", "existingShipmentIds"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "status": { "type": "string" },
+        "destinationCountry": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "addressVerified": { "type": "boolean" },
+        "packages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["weightKg", "lengthCm", "widthCm", "heightCm"],
+            "properties": {
+              "weightKg": { "type": "number", "exclusiveMinimum": 0 },
+              "lengthCm": { "type": "number", "exclusiveMinimum": 0 },
+              "widthCm": { "type": "number", "exclusiveMinimum": 0 },
+              "heightCm": { "type": "number", "exclusiveMinimum": 0 }
+            }
+          }
+        },
+        "existingShipmentIds": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "order-fulfilment-pack",
+  "name": "Order Fulfilment Activation",
+  "version": "0.1.0",
+  "kind": "workflow",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "Agentic Business OS buyer-owned operations packs",
+  "entrypoint": "SKILL.md"
+}

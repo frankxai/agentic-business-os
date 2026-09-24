@@ -12,6 +12,7 @@ Standalone capabilities from the Agentic Business OS — each pack works **two w
 
 | Pack | Kind | One line |
 |---|---|---|
+| [`order-fulfilment-pack`](./order-fulfilment-pack/) | workflow | Native-first shipping assessment and safe local dry run; no live connector yet. |
 | [`claims-guard-pack`](./claims-guard-pack/) | gate | Zero-tolerance pre-publish audit for regulated claims, citations, and AI-tone. The load-bearing pack. |
 | [`business-intelligence-pack`](./business-intelligence-pack/) | memory | File-based business memory: decisions, market notes, weekly reviews. Check first, update after. |
 | [`design-contract-pack`](./design-contract-pack/) | authoring | Author a design.md + taste.md two-file contract for any brand. |
