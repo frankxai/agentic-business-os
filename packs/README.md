@@ -31,7 +31,7 @@ Standalone capabilities from the Agentic Business OS — each pack works **two w
 
 ## Contributing a pack
 
-Open a [pack submission issue](../../issues/new?template=pack_submission.md) first. The bar:
+Open a [pack submission issue](https://github.com/frankxai/agentic-business-os/issues/new?template=pack_submission.md) first. The bar:
 
 1. **Standalone** — works in a bare Claude.ai project with zero repo context
 2. **Has a refusal list** — every pack states what it must never do
