@@ -47,7 +47,7 @@ git clone https://github.com/<your-org>/<your-brand>
 cd <your-brand>/  # the template lives at template/ — move it to root or work in place
 
 # 2. Install + run
-pnpm install && pnpm dev
+cd template && pnpm install && pnpm dev
 
 # 3. Derive your brand (requires Claude Code or any coding agent)
 #    Open a terminal in the repo and run:
