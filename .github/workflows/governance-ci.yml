@@ -33,3 +33,4 @@ jobs:
           node-version: 22
       - run: node scripts/validate-packs.mjs
       - run: node scripts/validate-product-registry.mjs
+      - run: node --test packs/web-platform-studio-pack/test/studio.test.mjs packs/web-platform-studio-pack/test/graph.test.mjs packs/web-platform-studio-pack/test/site.test.mjs

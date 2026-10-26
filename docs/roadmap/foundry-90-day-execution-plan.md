@@ -1,5 +1,19 @@
 # Foundry 90-day execution plan
 
+## Web and app studio implementation lane — 2026-09-24
+
+Source: Frank's Sites by FrankX / Starlight production portfolio request, Codex task `01a0d4c5-ab02-77b0-8f46-873bf0b1f8dd`.
+
+- [x] Establish the portable [Web & App Studio Kit](../../packs/web-platform-studio-pack/README.md) candidate in the existing pack architecture.
+- [x] Implement a validated dependency projection and source provenance register, then use the shared requirements/graph in a native static Studio website and exportable brief builder (2026-09-25).
+- [ ] Complete browser and independent review of the Studio edition before a public release; local machine admission is recorded in the private task evidence.
+- [ ] Complete a real internal project using the workspace, retain its original source owner, and attach revision-bound evidence.
+- [ ] Extract and cold-test one native code starter, then independently build/review one Framer or Webflow native edition based on buyer evidence.
+- [ ] Complete independent provider review and required cold buyer executions; the local candidate is not a released paid product.
+- [ ] Connect approved public project records to Sites by FrankX and the Starlight Production Studio offer, after the owning source lanes and demand-capture gates are reconciled.
+
+This lane preserves the existing Foundry plan. Platform adapters, live domain automation, hosted builder, checkout and a public portfolio are separate unfinished deliverables.
+
 ## Principle
 
 Launch one coherent wedge before marketplace, certification, white-label scale, or always-on infrastructure:

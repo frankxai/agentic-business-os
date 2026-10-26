@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "editions": {
+    "marketing": [],
+    "application": ["auth", "data"],
+    "commerce": ["auth", "data", "payments", "email"],
+    "platform": ["auth", "data", "tenancy", "ai"]
+  },
+  "features": ["auth", "data", "payments", "email", "tenancy", "ai", "locales"],
+  "requirements": [
+    {"id":"buyer-journey","when":"all","label":"Buyer job and complete primary journey","acceptance":"Named buyer and outcome; a new user completes the primary task, including recovery, with observed evidence."},
+    {"id":"design-system","when":"all","label":"Design direction and interface states","acceptance":"Approved visual direction, tokens, real content, responsive layouts, empty/loading/error/success states and purposeful motion."},
+    {"id":"brand-assets","when":"all","label":"Asset provenance and usable identity","acceptance":"Asset rights and source records; logo tested small and in monochrome; actual vector master if a vector is promised; optimized image exports."},
+    {"id":"domain-ownership","when":"all","label":"Domain, DNS and deployment ownership","acceptance":"Named account owner, renewal record, canonical host, TLS, staging protections, DNS change/rollback packet and independent endpoint checks."},
+    {"id":"search-discovery","when":"all","label":"Search and answer discoverability","acceptance":"Crawl/render/index checks, canonical and sitemap review, truthful structured data, source-backed pages, crawler decisions and measurement baseline."},
+    {"id":"accessibility","when":"all","label":"Accessibility in the actual journey","acceptance":"Keyboard, focus, forms, screen-reader sampling, contrast, zoom/reflow, touch and reduced-motion checks; automated scan supplemented manually."},
+    {"id":"performance","when":"all","label":"Performance with representative content","acceptance":"Repeatable mobile lab conditions, payload budgets and layout stability; field LCP/INP/CLS separately recorded when sufficient traffic exists."},
+    {"id":"security-privacy","when":"all","label":"Security and data boundaries","acceptance":"Secret and dependency checks, threat review, consent/data inventory, least privilege, retention and deletion behavior proportionate to the product."},
+    {"id":"release-delivery","when":"all","label":"Repeatable install and delivery","acceptance":"Clean install/customize/deploy rehearsal, version matrix, license, entitlement if relevant, support path and rollback to a known revision."},
+    {"id":"operations","when":"all","label":"Ownership after launch","acceptance":"Named operator, actionable alerts, backup/restore where data exists, renewal and update schedule, incident runbook, handoff and offboarding."},
+    {"id":"independent-review","when":"all","label":"Independent review of this revision","acceptance":"Reviewer differs from maker; findings and repairs attached. Host release gates and paid-product cold execution remain separate obligations.","independent":true},
+    {"id":"authentication","when":"auth","label":"Authentication and authorization","acceptance":"Session lifecycle, recovery, role checks on server, abuse limits and forbidden-path tests using separate test identities."},
+    {"id":"data-lifecycle","when":"data","label":"Data, jobs and migrations","acceptance":"Schema migrations, durable jobs/retries, idempotency, retention/export/deletion and demonstrated backup restore."},
+    {"id":"payment-lifecycle","when":"payments","label":"Purchase through refund and entitlement","acceptance":"Provider test environment; signed webhooks, duplicates/out-of-order events, failed payment, cancellation/refund and access reconciliation."},
+    {"id":"email-delivery","when":"email","label":"Transactional and marketing email","acceptance":"Domain authentication, delivery test, retry/duplicate behavior, bounce handling, appropriate unsubscribe and recovery independent of marketing consent."},
+    {"id":"tenant-isolation","when":"tenancy","label":"Tenant isolation across every access path","acceptance":"Two-tenant negative tests for storage, database, retrieval, exports, background jobs and logs; support access is bounded and recorded."},
+    {"id":"ai-evaluation","when":"ai","label":"Agent behavior, permissions and economics","acceptance":"Representative and adversarial evals, schema/tool validation, scoped credentials, confirmation for consequential actions, budgets, cancellation, durable state and trace review."},
+    {"id":"localization","when":"locales","label":"Locale content and behavior","acceptance":"Translated content reviewed, locale routing/hreflang and reciprocal links checked; currencies/dates/time zones and language fallback tested."}
+  ]
+}

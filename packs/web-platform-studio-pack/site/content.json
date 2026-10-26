@@ -1,0 +1,26 @@
+{
+  "brand": "Starlight",
+  "descriptor": "Production studio",
+  "title": "Websites with a point of view.",
+  "intro": "Thoughtful design and dependable engineering for founders, creators, and teams building something worth using.",
+  "description": "Explore the Starlight production approach and create a portable brief for your next website, application, storefront or platform.",
+  "projects": [
+    {"name":"FrankX","category":"Ideas, systems and creative work","description":"A personal home connecting AI architecture, music, writing and the work behind it.","url":"https://www.frankx.ai/","theme":"frankx","word":"Make it matter."},
+    {"name":"Starlight Intelligence","category":"Agent systems and ownership","description":"A home for agent systems, tools and the principle of keeping control of your own work.","url":"https://starlightintelligence.ai/","theme":"starlight","word":"Keep the key."},
+    {"name":"Arcanea","category":"Creative intelligence","description":"An exploration of creative intelligence, imaginative worlds and tools for making.","url":"https://www.arcanea.ai/","theme":"arcanea","word":"Worlds await."}
+  ],
+  "layers": [
+    {"title":"A clear identity","body":"A recognizable voice, considered typography and an asset family that belongs together.","detail":"Brand direction · Original imagery · Design tokens"},
+    {"title":"A complete experience","body":"The main task, the quiet details, and the moments when something goes wrong.","detail":"Responsive layouts · Accessibility · Recovery states"},
+    {"title":"Dependable foundations","body":"Domains, data and integrations with a clear owner and a way to recover.","detail":"Infrastructure · Permissions · Deployment"},
+    {"title":"Discoverable expertise","body":"Useful pages grounded in original knowledge, with evidence people can inspect.","detail":"Search foundations · Content · Measurement"},
+    {"title":"Intelligence with boundaries","body":"Agent features with a defined job, evaluated behavior and controlled access.","detail":"Tools · Evaluations · Cost controls"},
+    {"title":"A considered handoff","body":"Editable source, clear rights and enough understanding to keep improving the work.","detail":"Documentation · Ownership · Maintenance"}
+  ],
+  "faqs": [
+    {"question":"What does the project brief include?","answer":"A readable document with your intended outcome, project type, delivery preference, requirements and work sequence. You can also download the kit’s JSON record, with empty evidence for your builder to complete as the work is verified."},
+    {"question":"Can I use my existing website platform?","answer":"Yes. Start with the editing experience and integrations you need. Framer and Webflow can support a website layer; authenticated applications, complex data and agent features may need additional architecture."},
+    {"question":"Where do the details I enter go?","answer":"The brief is prepared in this page and downloaded only when you choose. This example does not send the details to a server or save them between visits."},
+    {"question":"Is this a published agency offer?","answer":"This is a working Studio edition under development. The brief builder is usable; commercial packages and individual native platform editions require their own release review."}
+  ]
+}

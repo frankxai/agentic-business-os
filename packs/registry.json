@@ -2,6 +2,15 @@
   "registryVersion": "1.0",
   "packs": [
     {
+      "id": "web-platform-studio-pack",
+      "name": "Starlight Web & App Studio Kit",
+      "version": "0.2.0",
+      "kind": "workflow",
+      "summary": "A portable delivery workspace, dependency graph and native static Studio website with a local project-brief builder. Local candidate; builder-native adapters remain planned.",
+      "coworkCompatible": true,
+      "harnessVersion": "v0.1.2"
+    },
+    {
       "id": "ai-native-business-pathfinder-pack",
       "name": "AI-Native Business Pathfinder",
       "version": "0.1.0",

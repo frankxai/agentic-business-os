@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "new-project",
+  "name": "New project",
+  "owner": "",
+  "buyer": "",
+  "job": "",
+  "successMeasure": "",
+  "edition": "marketing",
+  "platform": "undecided",
+  "features": [],
+  "targetRevision": null,
+  "productPacketRef": null,
+  "maxEvidenceAgeDays": 30,
+  "domains": [],
+  "evidence": []
+}

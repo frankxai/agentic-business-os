@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "proposal-only",
+  "hostname": "example.com",
+  "accountOwner": null,
+  "registrar": null,
+  "dnsProvider": null,
+  "deploymentProjectRef": null,
+  "renewalDate": null,
+  "beforeSnapshotRef": null,
+  "proposedRecords": [],
+  "mailDependencies": [],
+  "dnssecPlan": null,
+  "verificationPlan": ["Authoritative DNS", "Independent resolver", "TLS and canonical HTTP behavior", "Mail delivery if affected"],
+  "rollbackPlan": null,
+  "approvedBy": null,
+  "approvedAt": null,
+  "executedAt": null
+}

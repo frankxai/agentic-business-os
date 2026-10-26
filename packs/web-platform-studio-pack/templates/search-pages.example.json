@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-example",
+  "pages": [{
+    "path": "/",
+    "userQuestion": null,
+    "originalEvidence": [],
+    "authorOrOwner": null,
+    "canonical": "https://example.com/",
+    "indexingIntent": "public",
+    "primaryAction": null,
+    "structuredDataType": null,
+    "lastFactChecked": null,
+    "measurement": {"baselineDate":null,"searchClicks":null,"qualifiedActions":null,"observedCitations":null}
+  }],
+  "crawlerPolicy": {"search": "owner-decision-required", "training": "owner-decision-required"},
+  "note": "Sample values are not observed metrics. No indexing, ranking or citation guarantee."
+}

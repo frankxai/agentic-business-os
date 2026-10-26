@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "web-platform-delivery",
+  "purpose": "A procedural dependency projection for one project; dispatch and runtime authority stay with the host.",
+  "nodes": [
+    {"id":"scope","label":"Understand the job","dependsOn":[],"setup":true,"checks":[],"artifact":"Named buyer, owner, outcome, native platform and review revision"},
+    {"id":"identity","label":"Shape the identity","dependsOn":["scope"],"checks":["design-system","brand-assets"],"artifact":"Design direction, component states and approved asset family"},
+    {"id":"systems","label":"Build the application","dependsOn":["scope"],"checks":["authentication","data-lifecycle","tenant-isolation","ai-evaluation"],"artifact":"Working application, data boundaries and runtime evaluation evidence"},
+    {"id":"domains","label":"Connect the infrastructure","dependsOn":["scope"],"checks":["domain-ownership","email-delivery"],"artifact":"Owned domain, deployment and mail records with recovery plan"},
+    {"id":"experience","label":"Prove the experience","dependsOn":["identity","systems"],"checks":["buyer-journey","accessibility","performance","localization"],"artifact":"Observed complete user journey, including failure and recovery"},
+    {"id":"discovery","label":"Make it discoverable","dependsOn":["identity"],"checks":["search-discovery"],"artifact":"Original content, crawl/index review and measurement baseline"},
+    {"id":"commerce","label":"Verify the commercial flow","dependsOn":["systems"],"checks":["payment-lifecycle"],"artifact":"Purchase, entitlement, cancellation and refund evidence"},
+    {"id":"review","label":"Review independently","dependsOn":["experience","discovery","domains","commerce"],"checks":["security-privacy","independent-review"],"artifact":"Independent findings, repairs and remaining limitations"},
+    {"id":"delivery","label":"Rehearse delivery","dependsOn":["review"],"checks":["release-delivery"],"artifact":"Clean installation, native handoff and rollback rehearsal"},
+    {"id":"care","label":"Make it maintainable","dependsOn":["delivery"],"checks":["operations"],"artifact":"Named operator, tested recovery, support and update procedure"}
+  ]
+}

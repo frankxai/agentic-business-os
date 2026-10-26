@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "example-only-not-a-generation-receipt",
+  "asset": "assets/logo-concept.png",
+  "purpose": "Identity concept for human review",
+  "exactPrompt": null,
+  "provider": null,
+  "model": null,
+  "seed": null,
+  "seedAvailability": "Record unavailable when the tool does not expose it",
+  "sessionRef": null,
+  "sourceImages": [],
+  "rightsNotes": null,
+  "generatedAt": null,
+  "sha256": null,
+  "humanDecision": "pending",
+  "vectorMaster": null,
+  "hostSidecarSchema": "Use the host's actual provenance schema when supplied; this example is not a claim of schema compliance"
+}

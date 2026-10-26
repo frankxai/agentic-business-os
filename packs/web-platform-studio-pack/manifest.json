@@ -1,0 +1,15 @@
+{
+  "id": "web-platform-studio-pack",
+  "name": "Starlight Web & App Studio Kit",
+  "version": "0.2.0",
+  "kind": "workflow",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "entrypoint": "SKILL.md",
+  "status": "local-candidate",
+  "runtime": "Node.js >=22.16; no packages or API keys required for local tooling",
+  "releaseAuthorization": "external-review-required",
+  "nativePlatformAdapters": [],
+  "implementedCodeEditions": ["static-studio-site"],
+  "graphRuntime": "procedural-projection-only"
+}
