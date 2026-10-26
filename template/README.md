@@ -35,7 +35,9 @@ Five files define how any AI agent behaves here. Edit these, and every future se
 
 `@claims-guard` (the publish gate — the load-bearing one) · `@content-polisher` · `@social-distributor` · `@seo-guardian` · `@product-architect`
 
-`/blog-post` · `/claims-check` · `/product-page` · `/weekly-content` · `/weekly-review` · `/ship`
+`/business-pathfinder` · `/blog-post` · `/claims-check` · `/product-page` · `/weekly-content` · `/weekly-review` · `/ship`
+
+Use `/business-pathfinder` before choosing a stack. It turns the operator's constraints into one narrow customer problem, a seven-day proof plan, and explicit gates for when automation is justified.
 
 ## The weekly rhythm
 

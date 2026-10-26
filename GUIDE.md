@@ -37,7 +37,7 @@ The Friday step is the one people skip and shouldn't: it's what makes week 30 sm
 
 Nothing publishes without passing:
 
-- **`@claims-guard`** — blocks regulated claim language, uncited assertions, banned phrases, and AI-tone. A FAIL is final until a human rewrites. This is the agent that keeps you out of regulatory trouble and out of the "obviously ChatGPT" zone.
+- **`@claims-guard`** — blocks configured claim patterns, uncited assertions, banned phrases, and AI-tone. A FAIL is final until a human rewrites. It is a review aid, not legal advice or proof of regulatory compliance.
 - **`/ship`** — typecheck + build + claims + SEO before any deploy. A human always presses the deploy button.
 - **The polish pass** (`taste.md`) — seven manual checks before any visual ships.
 

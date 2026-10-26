@@ -1,0 +1,10 @@
+{
+  "id": "ai-native-business-pathfinder-pack",
+  "name": "AI-Native Business Pathfinder",
+  "version": "0.1.0",
+  "kind": "strategy",
+  "license": "MIT",
+  "upstream": "github.com/frankxai/agentic-business-os",
+  "lineage": "FrankX Foundry proof-to-business loop and property implementer pattern",
+  "entrypoint": "SKILL.md"
+}

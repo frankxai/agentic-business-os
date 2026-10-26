@@ -28,7 +28,7 @@ You are operating a focused brand{{", in regulated-adjacent territory" if applic
 
 ## Primary commands
 
-`/blog-post` · `/product-page` · `/claims-check` · `/weekly-content` · `/weekly-review` · `/ship`
+`/business-pathfinder` · `/blog-post` · `/product-page` · `/claims-check` · `/weekly-content` · `/weekly-review` · `/ship`
 
 ## When to say no
 

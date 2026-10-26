@@ -2,6 +2,15 @@
 
 All notable changes. Versions follow semver; every release here can trigger sync PRs to registered downstream instances (see `HARNESS.md`).
 
+## Unreleased — AI-Native Business Foundry foundation
+
+- Added the AI-Native Business Pathfinder portable skill, route matrix, proof-plan template, and harness command/agent
+- Added a machine-readable Foundry product registry with schema and validation
+- Added the GitHub estate audit, master strategy, offer/community architecture, capability router, team contract, and 90-day execution plan
+- Added governance CI for pack and product-registry validation; hardened template CI concurrency, draft gating, and timeouts
+- Added the first blind Pathfinder forward-test receipt; remaining audience tests stay explicitly gated
+- Tightened public claims so the repository is described as a reusable starting point, not a legal, regulatory, or revenue guarantee
+
 ## v0.1.2 — 2026-06-11 · governance + CI
 
 - `template-ci.yml`: every change to `template/` is build-verified (install → typecheck → build)
