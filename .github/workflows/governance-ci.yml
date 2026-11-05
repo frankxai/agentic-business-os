@@ -1,0 +1,35 @@
+name: governance-ci
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "packs/**"
+      - "data/**"
+      - "schemas/**"
+      - "scripts/validate-*.mjs"
+      - ".github/workflows/governance-ci.yml"
+  pull_request:
+    paths:
+      - "packs/**"
+      - "data/**"
+      - "schemas/**"
+      - "scripts/validate-*.mjs"
+      - ".github/workflows/governance-ci.yml"
+
+concurrency:
+  group: governance-ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/validate-packs.mjs
+      - run: node scripts/validate-product-registry.mjs
